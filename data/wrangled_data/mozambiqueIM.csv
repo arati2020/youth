@@ -1,4 +1,4 @@
-IM.number,IM.name,IM.details,IM.narrative,IM.funding,youth,fp.rh
+IM.number,IM.name,IM.details,IM.narrative,IM.funding,youth,fp.rh,peace.security,democracy.humanrights.gov,health,edu.socialservices,eco.growth,human.ass,prog.dev.oversight
 50120,Central Contraceptive Procurement (CCP),"50120
 Implementing Mechanism Name:                     Central Contraceptive Procurement (CCP)
 Prime Partner:                                   Chemonics International, Inc.
@@ -22,7 +22,7 @@ TOTAL                                                                  $6,000,00
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    12 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 50232,International Military Education and Training (IMET),"50232
 Implementing Mechanism Name:               International Military Education and Training (IMET)
 Prime Partner:                             U.S. Department of State
@@ -46,7 +46,7 @@ TOTAL                                                                    $447,67
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    13 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
 50366,IMaP – Integrated Malaria Project,"50366
 Implementing Mechanism Name:                      IMaP – Integrated Malaria Project
 Prime Partner:                                    Chemonics International, Inc.
@@ -77,7 +77,7 @@ TOTAL                                                                    $3,381,
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     14 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 50367,UNICEF Umbrella Grant II,"50367
 Implementing Mechanism Name:                      UNICEF Umbrella Grant II
 Prime Partner:                                    Unicef
@@ -101,7 +101,7 @@ TOTAL                                                                   $1,110,0
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      15 of 159
                                    Office of Foreign Assistance
-                     USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                     USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 54747,Centers for Disease Control and Prevention IAA Agreement II,"54747
 Implementing Mechanism         Centers for Disease Control and Prevention IAA Agreement II
 Name:
@@ -128,7 +128,7 @@ TOTAL                                                                   $675,000
 Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
 11/16/2021                                                                                    16 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 100186,"GHSC - Global Health Supply Chain - Procurement and Supply Management
 (PSM) Project TO4","100186
 Implementing Mechanism          GHSC - Global Health Supply Chain - Procurement and Supply
@@ -168,7 +168,7 @@ TOTAL                                                              $1,640,000   
 Full Operational Plan Report        Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                 18 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 100249,"Supporting Malaria and Maternal, Newborn and Child Health Research","100249
 Implementing Mechanism           Supporting Malaria and Maternal, Newborn and Child Health Research
 Name:
@@ -194,7 +194,7 @@ TOTAL                                                                  $500,000 
  Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
  11/16/2021                                                                                   19 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 100264,USAID/Mozambique Program Support,"100264
 Implementing Mechanism Name:                    USAID/Mozambique Program Support
 Prime Partner:                                  To be Determined - Unknown
@@ -301,7 +301,7 @@ TOTAL                                                                        -  
 Full Operational Plan Report           Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                    22 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE
 103601,TB Response,"103601
 Implementing Mechanism Name:                TB Response
 Prime Partner:                              To be Determined –Not in SAM, ADPP Mozambique
@@ -338,7 +338,7 @@ TOTAL                                                                  $4,930,00
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    23 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE
 103604,Alcançar - Achieving Quality Health Services for Women and Children,"103604
 Implementing Mechanism               Alcançar - Achieving Quality Health Services for Women and
 Name:                                Children
@@ -396,7 +396,7 @@ TOTAL                                                              $13,284,000  
 Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                   25 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 103612,PRONASAR,"103612
 Implementing Mechanism           PRONASAR
 Name:
@@ -438,7 +438,7 @@ TOTAL                                                              $5,250,000   
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 27 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 105269,USAID Education Sector Support Fund (FASE),"105269
 Implementing Mechanism Name:                   USAID Education Sector Support Fund (FASE)
 Prime Partner:                                 To be Determined - Unknown
@@ -461,7 +461,7 @@ TOTAL                                                                   $700,000
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     28 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
 105336,Last Mile Supply Chain,"105336
 Implementing Mechanism Name:                      Last Mile Supply Chain
 Prime Partner:                                    VILLAGEREACH
@@ -499,7 +499,7 @@ TOTAL                                                                       $365
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 30 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 105337,Promoting the Quality of Medicines Plus (PQM+),"105337
 Implementing Mechanism Name:                 Promoting the Quality of Medicines Plus (PQM+)
 Prime Partner:                               United States Pharmacopeial Convention, Inc., The
@@ -523,7 +523,7 @@ TOTAL                                                                     $100,0
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    31 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 105342,PMI Vector Link Project,"105342
 Implementing Mechanism Name:                     PMI Vector Link Project
 Prime Partner:                                   Abt Associates Inc.
@@ -548,7 +548,7 @@ TOTAL                                                                  $1,060,00
  Full Operational Plan Report         Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                     32 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 105345,Peace Corps SPA PAPA Inter-agency Agreement No. 5,"105345
 Implementing Mechanism Name:              Peace Corps SPA PAPA Inter-agency Agreement No. 5
 Prime Partner:                            U.S. Peace Corps
@@ -572,7 +572,7 @@ TOTAL                                                                     $20,00
  Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
  11/16/2021                                                                                   33 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 105352,Transform Nutrition in Nampula,"105352
 Implementing Mechanism Name:                Transform Nutrition in Nampula
 Prime Partner:                              To be Determined –Not in SAM, ADPP Mozambique
@@ -620,7 +620,7 @@ TOTAL                                                              $4,722,283   
 Full Operational Plan Report        Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                 35 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 105386,Local Empowerment to Advance Development (USAID LEAD),"105386
 Implementing Mechanism Name:              Local Empowerment to Advance Development (USAID LEAD)
 Prime Partner:                            To be Determined –Not in SAM, EUROSIS
@@ -650,7 +650,7 @@ TOTAL                                                                        $35
  Full Operational Plan Report          Operating Unit: Mozambique               Operational Plan – FY 2021
  11/16/2021                                                                                       36 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
 105394,Integrated Social Behavior Change Communication (SBCC) activity,"105394
 Implementing Mechanism                Integrated Social Behavior Change Communication (SBCC)
 Name:                                 activity
@@ -697,7 +697,7 @@ TOTAL                                                                  $760,000 
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 38 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107390,"Premier Promoting Innovative and Resilient Agriculture Market Systems
 Activity","107390
 Implementing Mechanism             Premier Promoting Innovative and Resilient Agriculture Market
@@ -724,7 +724,7 @@ TOTAL                                                                 $4,616,000
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    39 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
 107394,"Supporting the Policy Enabling Environment for Development (USAID
 SPEED)","107394
 Implementing Mechanism            Supporting the Policy Enabling Environment for Development (USAID
@@ -766,7 +766,7 @@ TOTAL                                                                $4,585,000 
 Full Operational Plan Report          Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                    41 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE
 107395,FTF Integrated Resilience in Nutrition and Agriculture (FFT-RESINA),"107395
 Implementing Mechanism               FTF Integrated Resilience in Nutrition and Agriculture (FFT-
 Name:                                RESINA)
@@ -809,7 +809,7 @@ TOTAL                                                              $6,100,000   
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 43 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE
 107398,"Environmental Security and Resilience in Northern Mozambique
 (ECOSMART-2)","107398
 Implementing Mechanism             Environmental Security and Resilience in Northern Mozambique
@@ -835,7 +835,7 @@ TOTAL                                                                 $1,500,000
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      44 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
 107399,Resilient Coastal Communities,"107399
 Implementing Mechanism Name:                     Resilient Coastal Communities
 Prime Partner:                                   To be Determined - Unknown
@@ -865,7 +865,7 @@ TOTAL                                                                 $5,000,000
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    45 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE
 107400,Resilient Gorongosa,"107400
 Implementing Mechanism Name:                   Resilient Gorongosa
 Prime Partner:                                 To be Determined –Not in SAM, Carr Foundation
@@ -922,7 +922,7 @@ TOTAL                                                                 $3,975,000
 Full Operational Plan Report           Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                    47 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE
 107402,Transform WASH,"107402
 Implementing Mechanism Name:                     Transform WASH
 Prime Partner:                                   To be Determined - Unknown
@@ -952,7 +952,7 @@ TOTAL                                                                  $1,500,00
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    48 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107416,"Community Radios Assistance for Greater Empowerment of Mozambicans
 (USAID’S CORAGEM)","107416
 Implementing Mechanism          Community Radios Assistance for Greater Empowerment of
@@ -985,7 +985,7 @@ TOTAL                                                                     $610,0
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 50 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
 107417,Local Governance Strengthening (USAID LOGOS) activity,"107417
 Implementing Mechanism Name:             Local Governance Strengthening (USAID LOGOS) activity
 Prime Partner:                           DAI Global, LLC
@@ -1030,7 +1030,7 @@ TOTAL                                                              $1,565,000   
 Full Operational Plan Report         Operating Unit: Mozambique          Operational Plan – FY 2021
 11/16/2021                                                                                 52 of 159
                                    Office of Foreign Assistance
-                     USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                     USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
 107468,TB STAR,"107468
 Implementing Mechanism Name:                   TB STAR
 Prime Partner:                                 PUBLIC HEALTH INSTITUTE
@@ -1058,7 +1058,7 @@ TOTAL                                                                   $183,000
 Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                   53 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE
 107470,G2G with DPS Nampula,"107470
 Implementing Mechanism Name:                      G2G with DPS Nampula
 Prime Partner:                                    To be Determined - Unknown
@@ -1082,7 +1082,7 @@ TOTAL                                                                      $350,
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     54 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107471,USAID Advancing Nutrition,"107471
 Implementing Mechanism Name:                       USAID Advancing Nutrition
 Prime Partner:                                     JSI Research And Training Institute, INC.
@@ -1106,7 +1106,7 @@ TOTAL                                                                         $5
  Full Operational Plan Report           Operating Unit: Mozambique               Operational Plan – FY 2021
  11/16/2021                                                                                        55 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107474,"Global Health Supply Chain Procurement and Supply Management Project
 (GHSC-PSM) TO3 TA","107474
 Implementing Mechanism          Global Health Supply Chain Procurement and Supply Management
@@ -1142,7 +1142,7 @@ TOTAL                                                                  $1,650,00
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 57 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107506,MOMENTUM Routine Immunization Transformation and Equity (M-RITE),"107506
 Implementing Mechanism             MOMENTUM Routine Immunization Transformation and Equity (M-
 Name:                              RITE)
@@ -1168,7 +1168,7 @@ TOTAL                                                                $1,750,000 
  Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
  11/16/2021                                                                                   58 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107511,"Global Health Supply Chain Procurement and Supply Management Project
 (GHSC/PSM) Task Order 2","107511
 Implementing Mechanism          Global Health Supply Chain Procurement and Supply Management
@@ -1197,7 +1197,7 @@ TOTAL                                                                 $13,390,00
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     59 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107516,"Commodities for Health: Ensuring Guaranteed Access and Reliability
 (CHEGAR)","107516
 Implementing Mechanism             Commodities for Health: Ensuring Guaranteed Access and Reliability
@@ -1240,7 +1240,7 @@ TOTAL                                                              $1,000,000   
 Full Operational Plan Report        Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                 61 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 107585,G2G with DPS Zambézia,"107585
 Implementing Mechanism Name:                      G2G with DPS Zambézia
 Prime Partner:                                    To be Determined - Unknown
@@ -1268,7 +1268,7 @@ TOTAL                                                                    $2,150,
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      62 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109322,Small Town Sanitation (STS),"109322
 Implementing Mechanism Name:                      Small Town Sanitation (STS)
 Prime Partner:                                    To be Determined - Unknown
@@ -1295,7 +1295,7 @@ TOTAL                                                                   $2,800,0
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      63 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109324,Small Towns Water Fund,"109324
 Implementing Mechanism Name:                    Small Towns Water Fund
 Prime Partner:                                  To be Determined - Unknown
@@ -1318,7 +1318,7 @@ TOTAL                                                                $250,000   
 Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                   64 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109325,Justice Sector Technical Support Activity (JUSTA),"109325
 Implementing Mechanism Name:                Justice Sector Technical Support Activity (JUSTA)
 Prime Partner:                              To be Determined - Unknown
@@ -1342,7 +1342,7 @@ TOTAL                                                                   $250,000
 Full Operational Plan Report          Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                   65 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
 109328,"Reforço da Actividade de Jornalismo Investigativo em Recursos Naturais
 (Strengthened Investigative Journalism in Natural Resources Management) - REAJIR","109328
 Implementing              Reforço da Actividade de Jornalismo Investigativo em Recursos Naturais
@@ -1372,7 +1372,7 @@ TOTAL                                                                      $860,
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     66 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
 109333,USAID Advancing Girls' Education,"109333
 Implementing Mechanism Name:                     USAID Advancing Girls' Education
 Prime Partner:                                   To be Determined - Unknown
@@ -1408,7 +1408,7 @@ TOTAL                                                             $2,000,000    
 Full Operational Plan Report       Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                 68 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
 109336,USAID Enhancing Youth Life Skills and Employability,"109336
 Implementing Mechanism Name:               USAID Enhancing Youth Life Skills and Employability
 Prime Partner:                             To be Determined - Unknown
@@ -1432,7 +1432,7 @@ TOTAL                                                                   $1,893,0
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     69 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
 109337,"USAID improving learning in primary education grades 4, 5 and 6","109337
 Implementing Mechanism Name:           USAID improving learning in primary education grades 4, 5 and 6
 Prime Partner:                         To be Determined - Unknown
@@ -1455,7 +1455,7 @@ TOTAL                                                              $10,000,000  
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    70 of 159
                                    Office of Foreign Assistance
-                     USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                     USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
 109353,G2G with DPS Cabo Delgado,"109353
 Implementing Mechanism Name:               G2G with DPS Cabo Delgado
 Prime Partner:                             To be Determined –Not in SAM, DPS Cabo Delgado
@@ -1479,7 +1479,7 @@ TOTAL                                                                   $125,000
 Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                   71 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109354,G2G with DPS Niassa,"109354
 Implementing Mechanism Name:                      G2G with DPS Niassa
 Prime Partner:                                    To be Determined - Unknown
@@ -1506,7 +1506,7 @@ TOTAL                                                                      $461,
  Full Operational Plan Report          Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                     72 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109361,MOMENTUM Safe Surgery in Family Planning and Obstetrics (MSSFPO),"109361
 Implementing Mechanism              MOMENTUM Safe Surgery in Family Planning and Obstetrics
 Name:                               (MSSFPO)
@@ -1536,7 +1536,7 @@ TOTAL                                                                  $1,700,00
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    73 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109391,Improved Family Planning Initiative (IFPI),"109391
 Implementing Mechanism Name:                     Improved Family Planning Initiative (IFPI)
 Prime Partner:                                   Pathfinder International
@@ -1581,7 +1581,7 @@ TOTAL                                                               $8,870,000  
 Full Operational Plan Report         Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                  75 of 159
                                    Office of Foreign Assistance
-                     USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,TRUE
+                     USG Only - Not For Distribution - Sensitive but Unclassified",TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 109925,Global Health Support Initiative III (GHSI-III),"109925
 Implementing Mechanism Name:                  Global Health Support Initiative III (GHSI-III)
 Prime Partner:                                Social Solutions International, Inc.
@@ -1609,7 +1609,7 @@ TOTAL                                                                    $402,00
 Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
 11/16/2021                                                                                   76 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE
 110923,WASH Infrastructure A&E,"110923
 Implementing Mechanism Name:                      WASH Infrastructure A&E
 Prime Partner:                                    To be Determined - Unknown
@@ -1634,7 +1634,7 @@ TOTAL                                                                $3,574,717 
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    77 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 110939,"Mission-wide Monitoring, Evaluation, and Learning Support","110939
 Implementing Mechanism Name:            Mission-wide Monitoring, Evaluation, and Learning Support
 Prime Partner:                          To be Determined - Unknown
@@ -1741,7 +1741,7 @@ TOTAL                                                             $4,749,000    
 Full Operational Plan Report         Operating Unit: Mozambique          Operational Plan – FY 2021
 11/16/2021                                                                                 80 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE
 110957,Technical Support Services PANAGORA,"110957
 Implementing Mechanism Name:                     Technical Support Services PANAGORA
 Prime Partner:                                   Panagora Group LLC
@@ -1787,7 +1787,7 @@ TOTAL                                                                 $495,000  
 Full Operational Plan Report        Operating Unit: Mozambique           Operational Plan – FY 2021
 11/16/2021                                                                                 82 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE
 111059,G2G SPS Sofala,"111059
 Implementing Mechanism Name:                      G2G SPS Sofala
 Prime Partner:                                    To be Determined –Not in SAM, SPS Sofala
@@ -1814,7 +1814,7 @@ TOTAL                                                                       $187
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      83 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 111061,TBD PMI Bilateral (IMAP Follow on),"111061
 Implementing Mechanism Name:                     TBD PMI Bilateral (IMAP Follow on)
 Prime Partner:                                   To be Determined - Unknown
@@ -1845,7 +1845,7 @@ TOTAL                                                                   $3,030,9
  Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
  11/16/2021                                                                                    84 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 111063,G2G SPS TETE,"111063
 Implementing Mechanism Name:                   G2G SPS TETE
 Prime Partner:                                 To be Determined –Not in SAM, SPS TETE
@@ -1875,7 +1875,7 @@ TOTAL                                                                    $262,50
 Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
 11/16/2021                                                                                    85 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 111068,Health Systems Strengthening - HSS Flagship,"111068
 Implementing Mechanism Name:                     Health Systems Strengthening - HSS Flagship
 Prime Partner:                                   To be Determined - Unknown
@@ -1899,7 +1899,7 @@ TOTAL                                                                       $100
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      86 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 111071,PMI Social Behavior Change SBC - TBD,"111071
 Implementing Mechanism Name:                    PMI Social Behavior Change SBC - TBD
 Prime Partner:                                  To be Determined - Unknown
@@ -1924,7 +1924,7 @@ TOTAL                                                                  $1,297,50
  Full Operational Plan Report         Operating Unit: Mozambique            Operational Plan – FY 2021
  11/16/2021                                                                                   87 of 159
                                      Office of Foreign Assistance
-                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE
+                       USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 111073,MCH/FP Private Sector - TBD,"111073
 Implementing Mechanism Name:                      MCH/FP Private Sector - TBD
 Prime Partner:                                    To be Determined - Unknown
@@ -1951,7 +1951,7 @@ TOTAL                                                                       $510
  Full Operational Plan Report          Operating Unit: Mozambique              Operational Plan – FY 2021
  11/16/2021                                                                                      88 of 159
                                     Office of Foreign Assistance
-                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE
+                      USG Only - Not For Distribution - Sensitive but Unclassified",FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE
 111636,Building Social Cohesion in Cabo Delgado,"111636
 Implementing Mechanism Name:            Building Social Cohesion in Cabo Delgado
 Prime Partner:                          INTERNATIONAL ORGANIZATION FOR MIGRATION
@@ -1973,4 +1973,4 @@ TOTAL                                                                  $500,000 
 
 
 Full Operational Plan Report         Operating Unit: Mozambique             Operational Plan – FY 2021
-11/16/2021                                                                                    89 of 159",FALSE,FALSE
+11/16/2021                                                                                    89 of 159",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE

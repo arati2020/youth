@@ -39,15 +39,22 @@ mozambiqueIM <- as_tibble(mozambiqueIM[-1])
 mozambiqueIM %<>%
   separate(value,c("IM.info","IM.narrative","IM.funding"), sep="IMPLEMENTING MECHANISM NARRATIVE|FUNDING SUMMARY") %<>%
   mutate(youth = str_detect(IM.narrative,"youth"),
-                         fp.rh = str_detect(IM.funding,"HL.7.")
-                         ) %<>%
+         fp.rh = str_detect(IM.funding,"HL.7."),
+         peace.security = str_detect(IM.funding,"PS."),
+         democracy.humanrights.gov = str_detect(IM.funding,"DR."),
+         health = str_detect(IM.funding,"HL."),
+         edu.socialservices = str_detect(IM.funding,"ES."),
+         eco.growth = str_detect(IM.funding,"EG."),
+         human.ass = str_detect(IM.funding, "HA."),
+         prog.dev.oversight = str_detect(IM.funding,"PO.")
+        ) %<>%
   separate(IM.info,c("IM.heading","IM.details"),sep="Mechanism Number") %<>%
   separate(IM.heading,c("IM.number","IM.name"), sep = ":", extra = "merge", convert = TRUE) %<>%
   #extra=merge will split only twice so any semicolons in the IM name will not cause a split
   #convert = true will detect column classes
   mutate(IM.name= str_trim(IM.name),
          IM.details= str_trim(IM.details),
-         IM.narrative= str_squish(IM.narrative), #unlike trim, squish will remove spaces inbetween as well as leading and trailing
+         IM.narrative= str_squish(IM.narrative), #unlike trim, squish will remove spaces in between as well as leading and trailing
          IM.funding=str_trim(IM.funding)) %<>%
   write_csv(file = here("data/wrangled_data", "mozambiqueIM.csv"))
 
