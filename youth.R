@@ -1,6 +1,9 @@
 # Load libraries
 library(readr)
-library(pdftools)
+#library(pdftools)
+#library(docxtractr)
+#library(officer)
+library(textreadr)
 ## Load Libraries
 #for data tidying
 library(tibble)
@@ -21,20 +24,25 @@ library(magrittr)
 #for adding labels in all charts in a facet wrap
 #library(lemon)
 
-# Data Import 
-pdf_mozambique <- pdf_text(here("data", "raw_data", "mozambique.pdf"))
-spsd <- read_csv(here("data/raw_data", "SPSD.csv"), col_names = TRUE, name_repair="universal")
+path = here("data", "raw_data", "Mozambique.docx")
 
-imstart = pdf_mozambique %>% str_which(pattern = "IMPLEMENTING MECHANISM SUMMARY")
-imend = pdf_mozambique %>% str_which(pattern = "KEY ISSUE, SPSD, and PROGRAM SUMMARY")
+#using textreadr
+doc_mozambique <- textreadr::read_docx(path)
+imstart = doc_mozambique %>% str_which(pattern = "IMPLEMENTING MECHANISM SUMMARY")
+imend = doc_mozambique %>% str_which(pattern = "KEY ISSUE, SPSD, and PROGRAM SUMMARY")
 
-mozambique1 <- pdf_mozambique[1:(imstart-1)]
-mozambique2 <- pdf_mozambique[imstart:(imend-1)]
-mozambique3 <- pdf_mozambique[imend:length(pdf_mozambique)]
+mozambique1 <- doc_mozambique[1:(imstart-1)]
+mozambique2 <- doc_mozambique[imstart:(imend-1)]
+mozambique3 <- doc_mozambique[imend:length(doc_mozambique)]
 
-mozambique2 %<>% str_c(collapse = "")
+mozambique2 %<>% str_c(collapse = "\\n")
+
 mozambiqueIM <- mozambique2 %>% str_split(pattern = "IM ", simplify = TRUE)
 mozambiqueIM <- as_tibble(mozambiqueIM[-1])
+
+##########################################################################################
+
+spsd <- read_csv(here("data/raw_data", "SPSD.csv"), col_names = TRUE, name_repair="universal")
 
 mozambiqueIM %<>%
   separate(value,c("IM.info","IM.narrative","IM.funding"), sep="IMPLEMENTING MECHANISM NARRATIVE|FUNDING SUMMARY") %<>%
@@ -58,4 +66,25 @@ mozambiqueIM %<>%
          IM.funding=str_trim(IM.funding)) %<>%
   write_csv(file = here("data/wrangled_data", "mozambiqueIM.csv"))
 
-mozambiqueIM[2]
+
+####################################################################################
+#using officer to read in docx file
+doc_mozambique<- officer::read_docx(path)
+docx_summary(doc_mozambique)[1]
+
+#using doxtractr ot convert to pdf
+docxtractr::convert_to_pdf(path, pdf_file = sub("[.]docx", ".pdf", path))
+
+#using docxtractr read in the docx file
+doc_mozambique <- docxtractr::read_docx(path)
+test <- docxtractr::docx_extract_tbl(doc_mozambique, tbl_number = 25)
+
+# Data Import using pdf tools
+pdf_mozambique <- pdf_text(here("data", "raw_data", "mozambique.pdf"))
+
+imstart = pdf_mozambique %>% str_which(pattern = "IMPLEMENTING MECHANISM SUMMARY")
+imend = pdf_mozambique %>% str_which(pattern = "KEY ISSUE, SPSD, and PROGRAM SUMMARY")
+
+mozambique1 <- pdf_mozambique[1:(imstart-1)]
+mozambique2 <- pdf_mozambique[imstart:(imend-1)]
+mozambique3 <- pdf_mozambique[imend:length(pdf_mozambique)]
