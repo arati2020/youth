@@ -1,4 +1,5 @@
 # Load libraries
+library(googledrive)
 library(readr)
 #library(pdftools)
 #library(docxtractr)
@@ -24,13 +25,28 @@ library(magrittr)
 #for adding labels in all charts in a facet wrap
 #library(lemon)
 
-#country.name= "Mozambique"
-countries = list("Mozambique","India")
-  
-func_country = function(country.name){
+OP.folder = "1r8TysHgddUGQmj7iTWdYL9ajFbQIF2_p" #id of approved OP folder
+
+# for every regionID in drive_ls(as_id(OP.folder))["id"] except for the folder with name USAID functional Bureaus , run a function that lists all files
+#then for every file get the name using drive_get
+
+regionIDs <- drive_ls(as_id(OP.folder)) %>% filter(name != "USAID Functional Bureaus") %>% select("id") %>% pull()  #list of regionID drives within the approved OP folder except bureaus
+regionIDs <- c("1y_bP_Zxt0hy8DNSW1BZLEw2YlWhkBF0N","1cn-CV61MbUbK-zt4lsBLq4ORIKS_fKa_")
+
+#all filenames within a folder
+filelist <- function(folderID){drive_ls(as_id(folderID))}
+
+countryfilenames <- map_dfr(regionIDs, filelist) %>% select("name") %>% pull() #list name of all files in all the regionID
+countryfileids <- map_dfr(regionIDs, filelist) %>% select("id") %>% pull()
+
+walk(.x= countryfileids, ~{drive_download(as_id(.x))} )
+
+spsd <- read_csv(here("data/raw_data", "SPSD.csv"), col_names = TRUE, name_repair="universal")
+
+func_country = function(countryfilename){
               
               #using textreadr
-              doc_country <- textreadr::read_docx(dir(here("data","raw_data"),full.names = T, pattern = str_c("^",country.name)))
+              doc_country <- textreadr::read_docx(countryfilename)
               imstart = doc_country %>% str_which(pattern = "IMPLEMENTING MECHANISM SUMMARY")
               imend = doc_country %>% str_which(pattern = "KEY ISSUE, SPSD, and PROGRAM SUMMARY")
               
@@ -40,45 +56,45 @@ func_country = function(country.name){
               
               country2 %<>% str_c(collapse = regex("\\n"))
               
-              countryIM <- country2 %>% str_split(pattern = "IM ", simplify = TRUE)
+              countryIM <- country2 %>% str_split(pattern = "IM [:digit:]{5,6}:", simplify = TRUE)
               countryIM <- as_tibble(countryIM[-1])
               
               ##########################################################################################
               
-              spsd <- read_csv(here("data/raw_data", "SPSD.csv"), col_names = TRUE, name_repair="universal")
-              
-              countryIM %<>%
+             countryIM %<>%
                 separate(value,c("IM.info","IM.narrative","IM.funding"), sep="IMPLEMENTING MECHANISM NARRATIVE|FUNDING SUMMARY") %<>%
-                mutate(country= country.name,
+                mutate(country= str_remove(countryfilename," Full OP Report Approved.docx"),
                        youth = str_detect(IM.narrative,"youth"),
-                       fp.rh = str_detect(IM.funding,"HL.7."),
-                       peace.security = str_detect(IM.funding,"PS."),
-                       democracy.humanrights.gov = str_detect(IM.funding,"DR."),
-                       health = str_detect(IM.funding,"HL."),
-                       edu.socialservices = str_detect(IM.funding,"ES."),
-                       eco.growth = str_detect(IM.funding,"EG."),
-                       human.ass = str_detect(IM.funding, "HA."),
-                       prog.dev.oversight = str_detect(IM.funding,"PO.")
+                       fp.rh = str_detect(IM.funding,"HL\\.7\\."),
+                       peace.security = str_detect(IM.funding,"PS\\."),
+                       democracy.humanrights.gov = str_detect(IM.funding,"DR\\."),
+                       health = str_detect(IM.funding,"HL\\."),
+                       edu.socialservices = str_detect(IM.funding,"ES\\."),
+                       eco.growth = str_detect(IM.funding,"EG\\."),
+                       human.ass = str_detect(IM.funding, "HA\\."),
+                       prog.dev.oversight = str_detect(IM.funding,"PO\\.")
                       ) %<>%
-                separate(IM.info,c("IM.heading","IM.details"),sep="Mechanism Number") %<>%
-                separate(IM.heading,c("IM.number","IM.name"), sep = ":", extra = "merge", convert = TRUE) %<>%
+                separate(IM.info,c("IM.name","IM.table"),sep="Mechanism Number") %<>%
+                #separate(IM.heading,c("IM.number","IM.name"), sep = ":", extra = "merge", convert = TRUE) %<>%
                 #extra=merge will split only twice so any semicolons in the IM name will not cause a split
                 #convert = true will detect column classes
                 mutate(IM.name= str_trim(IM.name),
-                       IM.details= str_trim(IM.details),
+                       IM.table= str_trim(IM.table),
                        IM.narrative= str_squish(IM.narrative), #unlike trim, squish will remove spaces in between as well as leading and trailing
                        IM.funding=str_trim(IM.funding)) %<>%
-                write_csv(file = here("data/wrangled_data", str_c(country.name,"IM.csv")))
-          #    return(countryIM)
+                write_csv(file = here("data/wrangled_data", str_c(countryfilename,"IM.csv")))
+#              return(countryIM)
               }
 
-walk(countries,func_country)
+#allIM <- walk(.x = countryfilenames, .f = func_country)
 
-#write_csv(allIM, file = here("data/wrangled_data", "allIM.csv"))
+allIM <- map_dfr(.x = countryfilenames, .f = func_country)
+
+write_csv(allIM, file = here("data/wrangled_data", "allIM.csv"))
 
 #Create list of countries??
 #read from google drive folder 
-#Create one file of all countries.
+#troubleshoort india formatting
 
 ####################################################################################
 #using officer to read in docx file
