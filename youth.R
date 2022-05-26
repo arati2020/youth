@@ -31,7 +31,6 @@ OP.folder = "1r8TysHgddUGQmj7iTWdYL9ajFbQIF2_p" #id of approved OP folder
 #then for every file get the name using drive_get
 
 regionIDs <- drive_ls(as_id(OP.folder)) %>% filter(name != "USAID Functional Bureaus") %>% select("id") %>% pull()  #list of regionID drives within the approved OP folder except bureaus
-regionIDs <- c("1y_bP_Zxt0hy8DNSW1BZLEw2YlWhkBF0N","1cn-CV61MbUbK-zt4lsBLq4ORIKS_fKa_")
 
 #all filenames within a folder
 filelist <- function(folderID){drive_ls(as_id(folderID))}
@@ -40,6 +39,10 @@ countryfilenames <- map_dfr(regionIDs, filelist) %>% select("name") %>% pull() #
 countryfileids <- map_dfr(regionIDs, filelist) %>% select("id") %>% pull()
 
 walk(.x= countryfileids, ~{drive_download(as_id(.x))} )
+
+##################################
+#manual updates to nepal and asia regional files
+#############################################
 
 spsd <- read_csv(here("data/raw_data", "SPSD.csv"), col_names = TRUE, name_repair="universal")
 
@@ -54,7 +57,7 @@ func_country = function(countryfilename){
               country2 <- doc_country[imstart:(imend-1)]
               country3 <- doc_country[imend:length(doc_country)]
               
-              country2 %<>% str_c(collapse = regex("\\n"))
+              country2 %<>% str_c(collapse = "@")
               
               countryIM <- country2 %>% str_split(pattern = "IM [:digit:]{5,6}:", simplify = TRUE)
               countryIM <- as_tibble(countryIM[-1])
@@ -62,39 +65,52 @@ func_country = function(countryfilename){
               ##########################################################################################
               
              countryIM %<>%
-                separate(value,c("IM.info","IM.narrative","IM.funding"), sep="IMPLEMENTING MECHANISM NARRATIVE|FUNDING SUMMARY") %<>%
+                
+                separate(value,c("IM.info","IM.narrative","IM.funding"), 
+                         sep="IMPLEMENTING MECHANISM NARRATIVE|FUNDING SUMMARY") %<>%
+                
+                separate(IM.info,c("IM.heading","IM.table"),sep="Mechanism Number") %<>%
+                
+                select(-IM.heading) %<>%
+                
+                separate(IM.table,c("IM.number","IM.Name","Prime.Partner","Award.Number","Implementing.Mechanism.Type","Source.Agency","Implementing.Agency","Planned.Funding","Start.Date","End.Date","Total.Estimated.Cost"),
+                         sep = "Implementing Mechanism Name|Prime Partner|Award Number|Implementing Mechanism Type|Source Agency|Implementing Agency|Planned Funding|Start Date|End Date|Total Estimated Cost", 
+                         convert = TRUE) %<>%
+                #split IM.funding here
+                
+                mutate(across(.cols = IM.number:IM.funding,
+                              stringr::str_remove_all, "@|:@")
+                       ) %<>%
+                
+                mutate(IM.narrative = str_squish(IM.narrative)) %<>%
+              
                 mutate(country= str_remove(countryfilename," Full OP Report Approved.docx"),
-                       youth = str_detect(IM.narrative,"youth"),
-                       fp.rh = str_detect(IM.funding,"HL\\.7\\."),
-                       peace.security = str_detect(IM.funding,"PS\\."),
-                       democracy.humanrights.gov = str_detect(IM.funding,"DR\\."),
-                       health = str_detect(IM.funding,"HL\\."),
-                       edu.socialservices = str_detect(IM.funding,"ES\\."),
-                       eco.growth = str_detect(IM.funding,"EG\\."),
-                       human.ass = str_detect(IM.funding, "HA\\."),
-                       prog.dev.oversight = str_detect(IM.funding,"PO\\.")
+                       youth = ifelse(str_detect(IM.narrative,"youth"),"Youth",NA),
+                       fp.rh = ifelse(str_detect(IM.funding,"HL\\.7\\."),"FP.RH",NA),
+                       peace.security = ifelse(str_detect(IM.funding,"PS\\."),"Peace and security",NA),
+                       democracy.humanrights.gov = ifelse(str_detect(IM.funding,"DR\\."),"Democracy and human rights",NA),
+                       health = ifelse(str_detect(IM.funding,"HL\\."),"Health",NA),
+                       edu.socialservices = ifelse(str_detect(IM.funding,"ES\\."),"Education and social services",NA),
+                       eco.growth = ifelse(str_detect(IM.funding,"EG\\."),"Economic Growth",NA),
+                       human.ass = ifelse(str_detect(IM.funding, "HA\\."),"Humanitarian Assistance",NA),
+                       prog.dev.oversight = ifelse(str_detect(IM.funding,"PO\\."),"Program Dev & Oversight",NA)
                       ) %<>%
-                separate(IM.info,c("IM.name","IM.table"),sep="Mechanism Number") %<>%
-                #separate(IM.heading,c("IM.number","IM.name"), sep = ":", extra = "merge", convert = TRUE) %<>%
-                #extra=merge will split only twice so any semicolons in the IM name will not cause a split
-                #convert = true will detect column classes
-                mutate(IM.name= str_trim(IM.name),
-                       IM.table= str_trim(IM.table),
-                       IM.narrative= str_squish(IM.narrative), #unlike trim, squish will remove spaces in between as well as leading and trailing
-                       IM.funding=str_trim(IM.funding)) %<>%
+                
+                unite("Program.Type",youth:fp.rh, sep="/", na.rm=TRUE, remove=FALSE) %<>%
+                unite("sectors",peace.security:prog.dev.oversight, sep="/", na.rm=TRUE, remove=FALSE) %<>%
+                
+                separate(country,c("country","year"),sep="(?=FY)") %<>%
+                separate(country,c("country","date"),sep="(?=\\d{1,2}_\\d{1,2}_\\d{4})") %<>%
+          #TODO date not captured properly      
                 write_csv(file = here("data/wrangled_data", str_c(countryfilename,"IM.csv")))
-#              return(countryIM)
+                
+              return(countryIM)
               }
 
-#allIM <- walk(.x = countryfilenames, .f = func_country)
-
+#countryfilenames="Mozambique 11_16_2021 FY 2021 Full OP Report Approved.docx"
 allIM <- map_dfr(.x = countryfilenames, .f = func_country)
 
 write_csv(allIM, file = here("data/wrangled_data", "allIM.csv"))
-
-#Create list of countries??
-#read from google drive folder 
-#troubleshoort india formatting
 
 ####################################################################################
 #using officer to read in docx file
